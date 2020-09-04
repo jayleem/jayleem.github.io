@@ -4,19 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="J/LEE Web Design Home Page">
-    <meta name="keywords" content="St.Petersburg Web Designer, Full-stack Developer, Web Design, Logo Design, Graphic Design, Programmer">
+    <meta name="description" content="J/LEE Web Design Contact">
+    <meta name="keywords"
+        content="St.Petersburg Web Designer, Full-stack Developer, Web Design, Logo Design, Graphic Design, Programmer">
     <meta name="author" content="github.com/jayleem">
-    <meta name="robots" content="index, follow" />
-    <title>J/LEE Web Design</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <title>J/LEE Web Design - Portfolio</title>
     <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="text/javascript" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm border-bottom">
-        <a class="navbar-brand" href="#">J/LEE</a>
+    <nav class="navbar navbar-expand-lg navbar-dark shadow border-bottom border-orange">
+        <a class="navbar-brand text-white" href="#">J <span class="text-orange m-0 p-0">/</span> LEE</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -24,32 +27,80 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="index.html">HOME</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link" href="./files/jleeresume.docx">RESUME</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="contact.html">CONTACT</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <div class="container-fluid vh-100 bg-white">
-        <div class="row vh-100">
-            <div class="col-sm-12 col-md-10 bg-light ml-auto mr-auto p-0 m-0">
-                <p>Contact works!</p>
+    <div class="container-fluid text-orange">
+        <a class="btn btn-custom" onclick="history.back()">Go Back</a>
+        <div class="row">
+            <div class="col-10 home-content ml-auto mr-auto col-md-9 mb-md-0 mb-5">
+                <h2 class="text-center my-4">Contact me</h2>
+                <p class="text-center mx-auto mb-5">
+                    Do you have any questions? 
+                    Please do not hesitate to
+                    contact me directly.
+                </p>
+                <form id="contact-form" name="contact-form" action="mailto:jason.lm@live.com" method="POST"
+                    enctype="text/plain">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <label for="name" class="">Your name</label>
+                                <input type="text" id="name" name="name" class="form-control" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <label for="email" class="">Your email</label>
+                                <input type="text" id="email" name="email" class="form-control" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="md-form mb-0">
+                                <label for="subject" class="">Subject</label>
+                                <input type="text" id="subject" name="subject" class="form-control" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="md-form">
+                                <label for="message">Your message</label>
+                                <textarea type="text" id="message" name="message" rows="3"
+                                    class="form-control md-textarea" required></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row my-2">
+                        <div class="col-md-12 text-center text-md-left">
+                            <a class="btn btn-custom" type="submit" value="Send">Send</a>
+                            <a class="btn btn-custom" type="reset" value="Reset">Reset</a>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
-    <footer class="footer shadow-sm border-top bg-white py-2 text-center">
-        <span>
+    <footer class="footer shadow border-top border-orange py-2 text-center">
+        <span class="text-white">
             &copy;
-            <script>document.write(new Date().getFullYear())</script> Made by <a href="https://www.github.com/jayleem"
-                target="_blank">J/LEE</a>
+            <script>document.write(new Date().getFullYear())</script> Made by <a class="text-white"
+                href="https://www.github.com/jayleem" target="_blank">J/LEE</a>
         </span>
     </footer>
 </body>
