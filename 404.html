@@ -4,65 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="J/LEE Web Design Home Page">
+    <meta name="description" content="J/LEE Web Design 404">
     <meta name="keywords"
         content="St.Petersburg Web Designer, Full-stack Developer, Web Design, Logo Design, Graphic Design, Programmer">
     <meta name="author" content="github.com/jayleem">
-    <meta name="robots" content="index, follow" />
-    <title>J/LEE Web Design</title>
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
+    <meta name="robots" content="noindex, nofollow" />
+    <title>J/LEE Web Design - 404</title>
+    <link rel="icon" type="image/x-icon" href="assets/d02a42d9cb3dec9320e5f550278911c7.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="text/javascript" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm border-bottom">
-        <a class="navbar-brand" href="#">J/LEE</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="container-fluid h-100 bg-white">
-        <div class="row h-100">
-            <div class="page-not-found col-10 ml-auto mr-auto p-0 m-0 py-4 text-center rounded">
-                <div class="col-8 ml-auto mr-auto">
-                    <p class="font-size-xl text-shadow text-white">404</p>
-                    <p class="font-size-md">PAGE NOT FOUND</h6>
-                    <p>
-                        The page you are looking for might have been removed or is temporaily
-                        unavailable.
-                    </p>
-                    <a class="btn-custom" href="index.html">HOMEPAGE</a>
+    <section id="nav"></section>
+    <section id="content">
+        <div class="wrapper">
+            <div class="container-fluid">
+                <div class="row h-100">
+                    <div class="page-not-found col-10 ml-auto mr-auto p-0 m-0 py-4 text-center rounded">
+                        <div class="col-8 ml-auto mr-auto">
+                            <p class="font-size-xl text-shadow text-white">404</p>
+                            <p class="font-size-md text-white">PAGE NOT FOUND</h6>
+                            <p class="text-white">
+                                The page you are looking for might have been removed or is temporaily
+                                unavailable.
+                            </p>
+                            <a class="btn-custom" href="index.html">HOMEPAGE</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <footer class="footer shadow-sm border-top bg-white py-2 text-center">
-        <span>
-            &copy;
-            <script>document.write(new Date().getFullYear())</script> Made by <a href="https://www.github.com/jayleem"
-                target="_blank">J/LEE</a>
-        </span>
-    </footer>
+    </section>
+    <section id="footer"></section>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#nav").load("partials/nav.html");
+            $("#footer").load("partials/footer.html");
+        });
+    </script>
 </body>
 
 </html>
