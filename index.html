@@ -8,66 +8,50 @@
     <meta name="keywords"
         content="St.Petersburg Web Designer, Full-stack Developer, Web Design, Logo Design, Graphic Design, Programmer">
     <meta name="author" content="github.com/jayleem">
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="index, nofollow" />
     <title>J/LEE Web Design - Home</title>
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
+    <link rel="icon" type="image/x-icon" href="assets/d02a42d9cb3dec9320e5f550278911c7.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark shadow border-bottom border-orange">
-        <a class="navbar-brand text-white" href="#">J <span class="text-orange m-0 p-0">/</span> LEE</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./files/jleeresume.docx">RESUME</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">CONTACT</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="wrapper">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 col-md-8 ml-auto mr-auto p-0 m-0 text-center home-content text-white">
-                    <div class="col-12 py-4">
-                        <h2 class="col-12">Hello, I'm <span class="text-orange m-0 p-0">Jason</span>.</h2>
-                        <p class="col-8 text-center ml-auto mr-auto m-0">
-                            <span class="text-orange m-0 p-0">Full stack web developer</span> located in St. Petersburg,
-                            FL.
-                        </p>
-                        <a class="col-12 text-center ml-auto mr-auto btn-custom mt-3" href="portfolio.html">
-                            VIEW MY WORK
-                        </a>
+    <section id="nav"></section>
+    <section id="content">
+        <div class="wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-8 ml-auto mr-auto p-0 m-0 text-center home-content text-white">
+                        <div class="col-12 py-4">
+                            <h2 class="col-12">Hello, I'm <span class="text-orange m-0 p-0">Jason</span>.</h2>
+                            <p class="col-8 text-center ml-auto mr-auto m-0">
+                                <span class="text-orange m-0 p-0">Full stack web developer</span> located in St. Petersburg,
+                                FL.
+                            </p>
+                            <a class="col-12 text-center ml-auto mr-auto btn-custom mt-3" href="portfolio.html">
+                                VIEW MY WORK
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <footer class="footer shadow border-top border-orange py-2 text-center">
-        <span class="text-white">
-            &copy;
-            <script>document.write(new Date().getFullYear())</script> Made by <a class="text-white"
-                href="https://www.github.com/jayleem" target="_blank">J/LEE</a>
-        </span>
-    </footer>
+    </section>
+    <section id="footer"></section>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#nav").load("partials/nav.html");
+            $("#footer").load("partials/footer.html");
+        });
+    </script>
 </body>
 
 </html>

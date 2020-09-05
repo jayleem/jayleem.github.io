@@ -60,6 +60,7 @@ a:hover {
 }
 
 .footer {
+    display: inline-block;
     position: relative;
     bottom: 0;
     width: 100%;

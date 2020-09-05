@@ -8,105 +8,89 @@
     <meta name="keywords"
         content="St.Petersburg Web Designer, Full-stack Developer, Web Design, Logo Design, Graphic Design, Programmer">
     <meta name="author" content="github.com/jayleem">
-    <meta name="robots" content="noindex, nofollow" />
+    <meta name="robots" content="index, nofollow" />
     <title>J/LEE Web Design - Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
+    <link rel="icon" type="image/x-icon" href="assets/d02a42d9cb3dec9320e5f550278911c7.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark shadow border-bottom border-orange">
-        <a class="navbar-brand text-white" href="#">J <span class="text-orange m-0 p-0">/</span> LEE</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">HOME</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./files/jleeresume.docx">RESUME</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="contact.html">CONTACT</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="wrapper">
-        <div class="container-fluid text-orange">
-            <a class="btn btn-custom" onclick="history.back()">Go Back</a>
-            <div class="row">
-                <div class="col-10 home-content ml-auto mr-auto col-md-9 mb-md-0 mb-5">
-                    <h2 class="text-center my-4">Contact me</h2>
-                    <p class="text-center mx-auto mb-5">
-                        Do you have any questions?
-                        Please do not hesitate to
-                        contact me directly.
-                    </p>
-                    <form id="contact-form" name="contact-form" action="mailto:jason.lm@live.com" method="POST"
-                        enctype="text/plain">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="md-form mb-0">
-                                    <label for="name" class="">Your name</label>
-                                    <input type="text" id="name" name="name" class="form-control" required>
+    <section id="nav"></section>
+    <section id="content">
+        <div class="wrapper">
+            <div class="container-fluid text-orange">
+                <a class="btn btn-custom" onclick="history.back()">Go Back</a>
+                <div class="row">
+                    <div class="col-10 home-content ml-auto mr-auto col-md-9 mb-md-0 mb-5">
+                        <h2 class="text-center my-4">Contact me</h2>
+                        <p class="text-center mx-auto mb-5">
+                            Do you have any questions?
+                            Please do not hesitate to
+                            contact me directly.
+                        </p>
+                        <form id="contact-form" name="contact-form" action="mailto:jason.lm@live.com" method="POST"
+                            enctype="text/plain">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <label for="name" class="">Your name</label>
+                                        <input type="text" id="name" name="name" class="form-control" required>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="md-form mb-0">
-                                    <label for="email" class="">Your email</label>
-                                    <input type="text" id="email" name="email" class="form-control" required>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <label for="email" class="">Your email</label>
+                                        <input type="text" id="email" name="email" class="form-control" required>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="md-form mb-0">
-                                    <label for="subject" class="">Subject</label>
-                                    <input type="text" id="subject" name="subject" class="form-control" required>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="md-form mb-0">
+                                        <label for="subject" class="">Subject</label>
+                                        <input type="text" id="subject" name="subject" class="form-control" required>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="md-form">
-                                    <label for="message">Your message</label>
-                                    <textarea type="text" id="message" name="message" rows="3"
-                                        class="form-control md-textarea" required></textarea>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="md-form">
+                                        <label for="message">Your message</label>
+                                        <textarea type="text" id="message" name="message" rows="3"
+                                            class="form-control md-textarea" required></textarea>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row my-2">
-                            <div class="col-md-12 text-center text-md-left">
-                                <a class="btn btn-custom" type="submit" value="Send">Send</a>
-                                <a class="btn btn-custom" type="reset" value="Reset">Reset</a>
+                            <div class="row my-2">
+                                <div class="col-md-12 text-center text-md-left">
+                                    <a class="btn btn-custom" type="submit" value="Send">Send</a>
+                                    <a class="btn btn-custom" type="reset" value="Reset">Reset</a>
+                                </div>
                             </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <footer class="footer shadow border-top border-orange py-2 text-center">
-        <span class="text-white">
-            &copy;
-            <script>document.write(new Date().getFullYear())</script> Made by <a class="text-white"
-                href="https://www.github.com/jayleem" target="_blank">J/LEE</a>
-        </span>
-    </footer>
+    </section>
+    <section id="footer"></section>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#nav").load("partials/nav.html");
+            $("#footer").load("partials/footer.html");
+        });
+    </script>
 </body>
 
 </html>
