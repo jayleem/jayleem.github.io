@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="J/LEE Web Design Portfolio">
+    <meta name="keywords"
+        content="St.Petersburg Web Designer, Full-stack Developer, Web Design, Logo Design, Graphic Design, Programmer">
+    <meta name="author" content="github.com/jayleem">
+    <meta name="robots" content="noindex, nofollow" />
+    <title>J/LEE Web Design - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/d02a42d9cb3dec9320e5f550278911c7.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body>
+    <section id="nav"></section>
+    <section id="content">
+        <div class="wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <a class="btn btn-custom" onclick="history.back()">Go Back</a>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-sm-12 col-md-10 p-0 m-0 home-content text-left text-white p-4 rounded clear-frosted">
+                        <h2 class="text-orange">Pitbull Paradise</h2>
+                        <p>
+                            Pitbull Paradise was a full-stack development project. The purpose of this project was
+                            to apply my knowledge of both front-end design as well as back-end development. The goal of the website was to 
+                            allow users to be able to find relevant information about the resuce such as mission statement and goals of the oprganization etc., but perhaps more importantly, for users to
+                            browse dogs that are available for adoption and to then be able to apply for adoption online.
+                        </p>
+                        <p>
+                            The full website is available <a href="https://pitbullparadise.herokuapp.com" target="_blank">here</a>.
+                        </p>
+                        <img class="img img-nomin img-thumbnail rounded mx-auto d-block shadow-none" width="400px"
+                            src="assets/8ebcf604e588bff91f345834d385f1f3.png" alt="">
+                        <h2 class="text-orange">Technology</h2>
+                        <ul class="list-unstyled">
+                            <li>MongoDB Cloud</li>
+                            <li>Express 4x</li>
+                            <li>Angular</li>
+                            <li>Node.js</li>
+                        </ul>
+                        <h2 class="text-orange">Design Process</h2>
+                        <p>
+                            I always start with a sketch of the website layout. Depending on
+                            the complexity of the project, or if I'm unsure of the layout, I may use Adobe XD to build a
+                            prototype. Below is the wireframe of the home page.
+                        </p>
+                        <img src="assets/6704b3e3a10559d09e399d65926e55e5.png" alt=""
+                            class="img-nomin img-thumbnail rounded mx-auto d-block shadow-none" width="400px">
+                        <h4 class="text-orange">Authentication</h4>
+                        <p>
+                            The adminstration dashboard was created to allow remote management over the website and provide useful real-time data
+                            visualization using Charts.js library.
+                            I wanted to restrict this section of the website to authorized-users only.
+                            I accomplished this by authenticating login credentials via on the server-side using the JWT library.
+                        </p>
+                        <img class="img img-nomin img-thumbnail rounded mx-auto d-block shadow-none" width="400px"
+                            src="assets/01e9cc3b82b6ddf07b869946cb8bd17e.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="footer"></section>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#nav").load("partials/nav.html");
+            $("#footer").load("partials/footer.html");
+        });
+    </script>
+</body>
+
+</html>
