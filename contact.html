@@ -87,37 +87,8 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $("#nav").load("partials/nav.html");
+            $("#footer").load("partials/footer.html");
         })();
-        $('#contact-form').submit(function (e) {
-                e.preventDefault();
-                var name = document.getElementById('name'),
-                    email = document.getElementById('email')
-                    subject = document.getElementById('subject')
-                    message = document.getElementById('message');
-                if (!name.value || !email.value || !subject.value || !message.value) {
-                    alert('Please fill out the contact form.');
-                }
-                else {
-                    $.ajax({
-                        url: "https://formsubmit.co/ajax/jacks88d@gmail.com",
-                        method: "POST",
-                        data: {
-                            name: name.value,
-                            message: message.value
-                        },
-                        dataType: JSON,
-                        success: function() {
-                            alert('success');
-                        },
-                        error: function() {
-                            alert('error');                            
-                        }
-                    });
-                }
-            })();
-
-
-
     </script>
 </body>
 
