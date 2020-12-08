@@ -11,96 +11,114 @@
     <meta name="robots" content="noindex, nofollow" />
     <title>J/LEE Web Design - Portfolio</title>
     <link rel="icon" type="image/x-icon" href="assets/d02a42d9cb3dec9320e5f550278911c7.png">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-        </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-        </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
 <body>
-    <section id="nav"></section>
-    <section id="content">
-        <div class="wrapper">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12">
-                        <a class="btn btn-custom" onclick="history.back()">Go Back</a>
+    <div class="container-fluid">
+        <div class="row">
+            <section id="nav" class="col-sm-12 col-md-2 p-0 bg-dark"></section>
+            <section id="content" class="col-sm-12 col-md-10 mt-4">
+                <div class="wrapper">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <button class="btn btn-custom" onclick="history.back()">Go Back</button>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-sm-12 col-md-10 p-0 m-0 home-content text-left text-dark p-4">
+                                <h2 class="text-mint">Bug Tracker</h2>
+                                <p>
+                                    Bug Tracker is a full-stack development project. The purpose of this project was to
+                                    allow software developers to manage bugs and other issues through the use of
+                                    tickets.
+                                </p>
+                                <p>
+                                    The full website is available <a href="https://cop2940-helpdesk.web.app"
+                                        target="_blank">here</a>.
+                                </p>
+                                <p>
+                                    <span class='text-danger'>**</span>Registration requires approval by an
+                                    administrator.<span class='text-danger'>**</span>
+                                </p>
+                                <img class="mobile-preview img img-nomin img-thumbnail mx-auto d-block shadow-none"
+                                    width="400px" src="assets/8890d48b58550a99b3bdbe126ce7ccf9.png" alt="">
+                                <h2 class="text-mint">Technology</h2>
+                                <ul class="list-unstyled">
+                                    <li>Cloudfire Store</li>
+                                    <li>Angular</li>
+                                    <li>Firebase</li>
+                                    <li>Some of the JavaScript Libraries used in this project include: RxJS,
+                                        AngularFire,
+                                        Charts.JS, etc.</li>
+                                </ul>
+                                <h2 class="text-mint">Design Process</h2>
+                                <p>
+                                    The process for this project was pretty standard, I sketched a wireframe for both
+                                    mobile and desktop versions.
+                                    I always design with mobile in mind so, the only difference for mobile is the layout
+                                    of the
+                                    dashboard. The final website looks very similar to this wireframe.
+                                </p>
+                                <img src="assets/6d833d3e39b02b6e5653d488f491d4c7.png" alt=""
+                                    class="mobile-preview img-nomin img-thumbnail mx-auto d-block shadow-none"
+                                    width="400px">
+                                <h2 class="text-mint">Authentication</h2>
+                                <p>
+                                    I read through the <a href="https://firebase.google.com/docs/auth">documentation</a>
+                                    for Firebase on implementing authentication.
+                                    I implemented email and password based authentication which aligned with the project
+                                    requirements.
+                                </p>
+                                <h2 class="text-mint">Problems and Solutions</h2>
+                                <p><span class=text-mint>Problem: </span>Prior to this project I had no knowledge of
+                                    Firebase or RxJS</p>
+                                <p><span class="text-mint">Solution:</span>
+                                    Reading documentation that exists for both
+                                    <a href="https://firebase.google.com/docs?hl=en">Firebase</a>
+                                    and
+                                    <a href="https://rxjs-dev.firebaseapp.com/">RxJS</a>
+                                    .
+                                </p>
+                                <p><span class="text-mint">Problem: </span>High Cloudstore Read Usage</p>
+                                <p><span class="text-mint">Solution:</span>
+                                    The problem was that Cloudfire would count reading a single document in a collection
+                                    as 1 read
+                                    which meant depending on how many documents were in a collection a single user could
+                                    easily exceed plan limits.
+                                    This a pretty serious issue as a single user could easily go through 1-2k reads per
+                                    hour.
+                                </p>
+                                <p>
+                                    I set out to fix this problem by creating an aggregated collection. I then read
+                                    through the documentation on how to write
+                                    <a href="https://firebase.google.com/docs/functions">Cloud functions for
+                                        Firebase</a>.
+                                    The function I ended up writing was pretty simple and would just keep the aggregated
+                                    collection updated when Firebase detected changes.
+                                </p>
+                                <p>
+                                    After implementing this solution a user could retrieve the aggregated collection
+                                    which would only count as a single read.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="row justify-content-center">
-                    <div
-                        class="col-sm-12 col-md-10 p-0 m-0 home-content text-left text-white p-4 rounded clear-frosted">
-                        <h2 class="text-orange">Bug Tracker</h2>
-                        <p>
-                            Bug Tracker was a full-stack development project and was intended for use by a single organization. The purpose of
-                            this project was to allow software developers to manage bugs and other issues through the use of tickets.
-                        </p>
-                        <p>
-                            The full website is available <a href="https://cop2940-helpdesk.web.app"
-                                target="_blank">here</a>.
-                        </p>
-                        <p>
-                            Registration requires approval by an administrator.
-                        </p>
-                        <img class="img img-nomin img-thumbnail rounded mx-auto d-block shadow-none" width="400px"
-                            src="assets/8890d48b58550a99b3bdbe126ce7ccf9.png" alt="">
-                        <h2 class="text-orange">Technology</h2>
-                        <ul class="list-unstyled">
-                            <li>Cloudfire Store</li>
-                            <li>Angular</li>
-                            <li>Firebase</li>
-                            <li>Some of the JavaScript Libraries used in this project include: RxJS, AngularFire,
-                                Charts.JS, etc.</li>
-                        </ul>
-                        <h2 class="text-orange">Design Process</h2>
-                        <p>
-                            The process for this project was pretty standard, I sketched a wireframe for both
-                            mobile and desktop versions.
-                            I always design with mobile in mind so, the only difference for mobile is the layout of the
-                            dashboard. The final website looks very similar to this wireframe.
-                        </p>
-                        <img src="assets/6d833d3e39b02b6e5653d488f491d4c7.png" alt=""
-                            class="img-nomin img-thumbnail rounded mx-auto d-block shadow-none" width="400px">
-                        <h2 class="text-orange">Authentication</h2>
-                        <p>
-                            I read through the <a href="https://firebase.google.com/docs/auth">documentation</a> for Firebase on implementing authentication.
-                            I implemented email and password based authentication which aligned with the project requirements. 
-                        </p>
-                        <h2 class="text-orange">Problems and Solutions</h2>                        
-                        <p><span class=text-orange>Problem: </span>Prior to this project I had no knowledge of Firebase or RxJS</p>
-                        <p><span class="text-orange">Solution:</span>
-                            Reading documentation that exists for both
-                            <a href="https://firebase.google.com/docs?hl=en">Firebase</a>
-                            and
-                            <a href="https://rxjs-dev.firebaseapp.com/">RxJS</a>
-                            .
-                        </p>
-                        <p><span class="text-orange">Problem: </span>High Cloudstore Read Usage</p>
-                        <p><span class="text-orange">Solution:</span>
-                            The problem was that Cloudfire would count reading a single document in a collection as 1 read
-                            which meant depending on how many documents were in a collection a single user could easily exceed plan limits.
-                            This a pretty serious issue as a single user could easily go through 1-2k reads per hour.
-                        </p>
-                        <p>
-                            I set out to fix this problem by creating an aggregated collection. I then read through the documentation on how to write
-                            <a href="https://firebase.google.com/docs/functions">Cloud functions for Firebase</a>.
-                            The function I ended up writing was pretty simple and would just keep the aggregated collection updated when Firebase detected changes.
-                        </p>
-                        <p>
-                            After implementing this solution a user could retrieve the aggregated collection
-                            which would only count as a single read.
-                        </p>
-                    </div>
-                </div>
-            </div>
+            </section>
         </div>
-    </section>
+    </div>
     <section id="footer"></section>
     <script type="text/javascript">
         $(document).ready(function () {
